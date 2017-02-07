@@ -24,7 +24,8 @@ gulp.task('webserver', ['sass'], function() {
     .pipe(webserver({
       port: 9001,
       livereload: true,
-      open: true
+      open: true,
+      host : "0.0.0.0"
     }));
 });
 

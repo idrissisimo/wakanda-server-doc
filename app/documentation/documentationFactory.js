@@ -135,6 +135,56 @@ angular.module('wakanda-server-doc')
           name: 'Miscellaneous',
           url: '#/doc/miscellaneous',
           page: 'miscellaneous'
+        },
+        {
+          name: 'Deployment',
+          url: '#/doc/deployment',
+          page: 'deployment',
+          children: [
+            {
+              name: 'On-premise',
+              url: '#/doc/deployment/on-premise',
+              parentPage: 'deployment',
+              page: 'on-premise'
+            },
+            {
+              name: 'Cloud Deployment',
+              url: '#/doc/deployment/cloud-deployment',
+              parentPage: 'deployment',
+              page: 'cloud-deployment',             
+            }
+          ]
+        },
+        {
+          name: 'Wakanda User Space',
+          url: '#/doc/console',
+          page: 'console',
+          children: [
+            {
+              name: 'Cloud Application',
+              url: '#/doc/console/cloud-subscription',
+              parentPage: 'console',
+              page: 'cloud-subscription'
+            },
+            {
+              name: 'Cloud Instance',
+              url: '#/doc/console/cloud-instance',
+              parentPage: 'console',
+              page: 'cloud-instance'
+            },
+            {
+              name: 'Cloud RDS',
+              url: '#/doc/console/cloud-rds',
+              parentPage: 'console',
+              page: 'cloud-rds'
+            },
+            {
+              name: 'On-Premise Application',
+              url: '#/doc/console/on-premise-application',
+              parentPage: 'console',
+              page: 'on-premise-application'
+            }
+          ]
         }
       ];
     }
